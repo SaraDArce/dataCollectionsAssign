@@ -1,10 +1,14 @@
-//Part 1
-/**
- * With that in mind, write functions that accomplish the following:
-Take an array of numbers and return the sum.
-Take an array of numbers and return the average.
-Take an array of strings and return the longest string.
-Take an array of strings, and a number and return an array of the strings that are longer than the given number.
-For example, stringsLongerThan([‘say’, ‘hello’, ‘in’, ‘the’, ‘morning’], 3); would return [“hello”, “morning”].
-Take a number, n, and print every number between 1 and n without using loops. Use recursion.
-*/
+//Part1
+// Split the CSV string into rows based on newline characters.
+const csvString = `ID,Name,Occupation,Age
+42,Bruce,Knight,41
+57,Bob,Fry Cook,19
+63,Blaine,Quiz Master,58
+98,Bill,Doctor’s Assistant,26`;
+let rows = csvString.split(“\n”);
+for (let i = 0; i < rows.length; i++) {
+  // Split the current row into individual elements (id, name, occupation, age)
+  // based on the comma delimiter and assign them to respective variables.
+  let [cell1, cell2, cell3, cell4] = rows[i].split(",");
+  //console.log(cell1, cell2, cell3, cell4);
+}
