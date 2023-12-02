@@ -10,7 +10,7 @@ for (let i = 0; i < rows.length; i++) {
   // Split the current row into individual elements (id, name, occupation, age)
   // based on the comma delimiter and assign them to respective variables.
   let [cell1, cell2, cell3, cell4] = rows[i].split(",");
-  //console.log(cell1, cell2, cell3, cell4);
+  console.log(cell1, cell2, cell3, cell4);
 }
 
 //Part2
@@ -51,7 +51,7 @@ for (let i = 1; i < lines.length; i++) {
     dataObj[header1[j]] = values[j];
   }
   result.push(dataObj);
-  console.log("The result asked by Alaa:", result);
+  console.log("The result asked by ME not Alaa!!:", result);
   console.log(result.pop());
   console.log("After pop:", result);
   console.log(
