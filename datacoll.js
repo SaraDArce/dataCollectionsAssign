@@ -22,3 +22,17 @@ for (let line of lines) {
   if (row.length === colNum) twoD.push(row);
 }
 console.log(twoD);
+
+//Part 3
+//using const map1 = array1.map((x) => x * 2);
+let header = lines[0].split(",");
+let result = [];
+for (let i = 1; i < lines.length; i++) {
+  let values = lines[i].split(",");
+  let dataObj = {};
+  for (let j = 0; j < header.length; j++) {
+    dataObj[header[j]] = values[j];
+  }
+  result.push(dataObj);
+}
+console.log(result);
